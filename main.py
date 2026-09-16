@@ -73,10 +73,11 @@ def main():
             print("please specify root hash for prev checkpoint")
             return
 
-        prev_checkpoint = {}
-        prev_checkpoint["treeID"] = args.tree_id
-        prev_checkpoint["treeSize"] = args.tree_size
-        prev_checkpoint["rootHash"] = args.root_hash
+        prev_checkpoint = {
+        "treeID": args.tree_id,
+        "treeSize": args.tree_size,
+        "rootHash": args.root_hash,
+        }
 
         consistency(prev_checkpoint, debug)
 
