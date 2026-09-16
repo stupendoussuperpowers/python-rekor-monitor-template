@@ -26,12 +26,10 @@ def extract_public_key(cert):
 #            encoding=serialization.Encoding.PEM,
 #            format=serialization.PublicFormat.SubjectPublicKeyInfo
 #        ))
-    pem_public_key = public_key.public_bytes(
-        encoding=serialization.Encoding.PEM,
-        format=serialization.PublicFormat.SubjectPublicKeyInfo
+    return public_key.public_bytes(
+    encoding=serialization.Encoding.PEM,
+    format=serialization.PublicFormat.SubjectPublicKeyInfo
     )
-
-    return pem_public_key
 
 def verify_artifact_signature(signature, public_key, artifact_filename):
     # load the public key
