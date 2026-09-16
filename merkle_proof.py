@@ -135,9 +135,7 @@ def root_from_inclusion_proof(hasher, index, size, leaf_hash, proof):
 
 
 def verify_inclusion(hasher, index, size, leaf_hash, proof, root, debug=False):
-    bytearray_proof = []
-    for elem in proof:
-        bytearray_proof.append(bytes.fromhex(elem))
+    bytearray_proof = [bytes.fromhex(elem) for elem in proof]
 
     bytearray_root = bytes.fromhex(root)
     bytearray_leaf = bytes.fromhex(leaf_hash)
