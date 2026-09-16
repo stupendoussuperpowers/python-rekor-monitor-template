@@ -1,4 +1,6 @@
 import argparse
+import json #for json.dumps(checkpoint)
+import requests #for http requests
 from util import extract_public_key, verify_artifact_signature
 from merkle_proof import DefaultHasher, verify_consistency, verify_inclusion, compute_leaf_hash
 
