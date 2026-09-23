@@ -3,14 +3,15 @@ from util import extract_public_key, verify_artifact_signature
 from merkle_proof import DefaultHasher, verify_consistency, verify_inclusion, compute_leaf_hash
 
 def get_log_entry(log_index, debug=False):
-    # verify that log index value is sane
+    # TODO: verify that log index value is sane
     pass
 
 def get_verification_proof(log_index, debug=False):
-    # verify that log index value is sane
+    # TODO: verify that log index value is sane
     pass
 
 def inclusion(log_index, artifact_filepath, debug=False):
+    # TODO::
     # verify that log index and artifact filepath values are sane
     # extract_public_key(certificate)
     # verify_artifact_signature(signature, public_key, artifact_filepath)
@@ -19,9 +20,11 @@ def inclusion(log_index, artifact_filepath, debug=False):
     pass
 
 def get_latest_checkpoint(debug=False):
+    # TODO: Fetch the latest checkpoint from rekor
     pass
 
 def consistency(prev_checkpoint, debug=False):
+    # TODO: 
     # verify that prev checkpoint is not empty
     # get_latest_checkpoint()
     pass

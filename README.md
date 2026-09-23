@@ -1,2 +1,3 @@
 # Python Rekor Monitor Template
-This is template code for an assignment in Software Supply Chain Security class.
+
+Template code for NYU CS-GY 9223 Software Supply Chain Security.
